@@ -5,14 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class ButtonActions : MonoBehaviour
 {
-    public void Settings()
-    {
-        
-    }
+    [SerializeField] GameObject mainmenu;
 
+
+    void NewGameLogic()   
+    {
+        mainmenu.SetActive(false);
+
+    }
     public void NewGame()
     {
-        Debug.Log("Clicked!");
+        Invoke("NewGameLogic", 0.5f);
     }
 
     public void LoadGame()
