@@ -10,21 +10,16 @@ public class NewGame : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     [SerializeField] private Sprite _on, _off;
     [SerializeField] private AudioClip _click;
     [SerializeField] private AudioSource _source;
+    [SerializeField] private Slider _slider;
 
     public void OnPointerDown(PointerEventData eventData)
     {
         _img.sprite = _on;
-        _source.PlayOneShot(_click);
+        _source.PlayOneShot(_click, _slider.value * 0.01f);
     }
 
     public void OnPointerUp(PointerEventData eventData)
     {
         _img.sprite = _off;
     }
-
-    public void IWasClicked()
-    {
-        Debug.Log("Clicked!");
-    }
-     
 }
