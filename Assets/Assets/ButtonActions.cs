@@ -5,25 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class ButtonActions : MonoBehaviour
 {
-    [SerializeField] GameObject mainmenu;
-
-
-    void NewGameLogic()   
-    {
-        mainmenu.SetActive(false);
-
-    }
-    public void NewGame()
-    {
-        Invoke("NewGameLogic", 0.5f);
-    }
-
-    public void LoadGame()
+    public void NewGame() //nic
     {
         Debug.Log("Clicked!");
     }
 
-    public void Exit()
+    public void LoadGame() //nic
+    {
+        Debug.Log("Clicked!");
+    }
+
+    public void Exit() //wy³¹cza program
     {
         Debug.Log("EXIT");
         Application.Quit();

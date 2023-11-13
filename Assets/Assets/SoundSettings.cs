@@ -11,7 +11,7 @@ public class SoundSettings : MonoBehaviour
     [SerializeField] Slider musicSlider;
     [SerializeField] Slider soundsSlider;
     [SerializeField] AudioMixer masterMixer;
-    //ustaiwa zapamietana glosciosc chyba
+    //ustawia zapamietana glosciosc chyba (nie jestem pewny, ukrad³em z neta)
     private void Start()
     {
         SetMasterVolume(PlayerPrefs.GetFloat("SavedMasterVolume", 100));
@@ -19,7 +19,7 @@ public class SoundSettings : MonoBehaviour
         SetMusicVolume(PlayerPrefs.GetFloat("SavedMusicVolume", 100));
 
     }
-    //zmienia glosnosc
+    //zmienia glosnosc (nastepne 3)
     public void SetMasterVolume(float _value)
     {
         if (_value < 1)
@@ -47,6 +47,7 @@ public class SoundSettings : MonoBehaviour
         PlayerPrefs.SetFloat("SavedSoundsVolume", _value);
         masterMixer.SetFloat("SoundsVolume", Mathf.Log10(_value / 100) * 20f);
     }
+    //nie wiem czemu pop[rzednie 3 s¹ wywo³ywane dopiero tutaj to tez ukrad³em
     public void SetMasterFromSlider()
     {
         SetMasterVolume(masterSlider.value);

@@ -10,15 +10,14 @@ public class NewGame : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     [SerializeField] private Sprite _on, _off;
     [SerializeField] private AudioClip _click;
     [SerializeField] private AudioSource _source;
-    [SerializeField] private Slider _slider;
 
-    public void OnPointerDown(PointerEventData eventData)
+    public void OnPointerDown(PointerEventData eventData) //zmienia sprite przycisnietego przycisku i wydaje dzwiek
     {
         _img.sprite = _on;
-        _source.PlayOneShot(_click, _slider.value * 0.01f);
+        _source.PlayOneShot(_click);
     }
 
-    public void OnPointerUp(PointerEventData eventData)
+    public void OnPointerUp(PointerEventData eventData) //zmienia sprite z powrotem
     {
         _img.sprite = _off;
     }
