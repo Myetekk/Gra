@@ -7,8 +7,17 @@ using UnityEngine.UI;
 public class manabar : MonoBehaviour
 {
     public int manaleft;
-    [SerializeField] Image[] crystals;
+    public const int maxmana = 10;
+    public Image[] crystals = new Image[maxmana];
     [SerializeField] private Sprite full, empty;
+    private void Start() //je¿eli bêdzie potrzeba sprawdzania iloœci kryszta³ów poza tworzeniem sceny (idk jakies mechaniki czy cos) to przeniesc to do UpdateManaBar()
+    { //je¿eli obiekt "Mana Bar" bêdzie mieæ inne dzieci ni¿ kryszta³y, funkcje trzeba bedzie zmieniæ na gameobject.find i wprowadziæ system nazywania kryszta³ów
+        for(int i = 0; i < crystals.Length; i++)
+        {
+            crystals[i] = this.gameObject.transform.GetChild(i).GetComponent<Image>();
+        }
+    }
+
     public void UpdateManaBar()
     {
         if(manaleft <= 10)

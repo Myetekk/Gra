@@ -18,7 +18,6 @@ public class KeyBoardInputs : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape)) //Detects every game updater if the escape key was pressed, used for menu navigation
         {
-            Debug.Log("escape pressed key was pressed");
             _animator.SetTrigger("RTPS"); //Return To Previous State
         }
     }
