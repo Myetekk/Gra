@@ -2614,16 +2614,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eff740b65d8d98040be33ffab3cce2f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChipBlack: {fileID: 21300000, guid: b8d882131bcf76f4686dbc4469ced388, type: 3}
-  ChipCyan: {fileID: 21300000, guid: 100f0152d0e088a44948abc27bf50035, type: 3}
-  ChipPink: {fileID: 21300000, guid: c0a3d573e03588e488dc9cd3f1725dd6, type: 3}
-  ChipYellow: {fileID: 21300000, guid: 8f532b02c4b01fe4f8320029610e69d4, type: 3}
-  ChipBrown: {fileID: 21300000, guid: 6812957fd3b47ac45b597c4fb1dc756c, type: 3}
-  ChipOrange: {fileID: 21300000, guid: 309724dd088d08c4d88baf82d3d44500, type: 3}
-  ChipWhite: {fileID: 21300000, guid: 2ead3fd2e4073114ebd4091202837c33, type: 3}
-  ChipBlue: {fileID: 21300000, guid: 6323d2c18eebcbc4eb407fa10c4f6187, type: 3}
-  ChipGreen: {fileID: 21300000, guid: d0b800e5d07ae73488796de180985d07, type: 3}
-  ChipRed: {fileID: 21300000, guid: 3732e322028b5a14bae8a0455eb46adb, type: 3}
+  chips:
+  - {fileID: 21300000, guid: b8d882131bcf76f4686dbc4469ced388, type: 3}
+  - {fileID: 21300000, guid: 6323d2c18eebcbc4eb407fa10c4f6187, type: 3}
+  - {fileID: 21300000, guid: 6812957fd3b47ac45b597c4fb1dc756c, type: 3}
+  - {fileID: 21300000, guid: 100f0152d0e088a44948abc27bf50035, type: 3}
+  - {fileID: 21300000, guid: d0b800e5d07ae73488796de180985d07, type: 3}
+  - {fileID: 21300000, guid: 309724dd088d08c4d88baf82d3d44500, type: 3}
+  - {fileID: 21300000, guid: c0a3d573e03588e488dc9cd3f1725dd6, type: 3}
+  - {fileID: 21300000, guid: 3732e322028b5a14bae8a0455eb46adb, type: 3}
+  - {fileID: 21300000, guid: 2ead3fd2e4073114ebd4091202837c33, type: 3}
+  - {fileID: 21300000, guid: 8f532b02c4b01fe4f8320029610e69d4, type: 3}
   sceneId: 3
 --- !u!114 &722211748
 MonoBehaviour:
