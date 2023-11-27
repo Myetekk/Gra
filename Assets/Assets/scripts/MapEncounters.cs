@@ -11,7 +11,6 @@ using static Unity.VisualScripting.Member;
 public class MapEncounters : MonoBehaviour
 {
     [SerializeField] private GameObject bg;
-    [SerializeField] private RectTransform bgrect;
     [SerializeField] private GameObject Enc_fight;
     [SerializeField] private GameObject Enc_rest;
     [SerializeField] private GameObject Enc_unk;
@@ -24,16 +23,17 @@ public class MapEncounters : MonoBehaviour
     private int rows = 0;
     void Start()
     {
-        /* 
-         tutaj mozna stworzyæ logike tworzenia mapy, czyli w sumie generacji ca³ej gry. proponuje:
-         w ka¿dym wierszu prznajmniej dwa encountery, prawdopodobieñstwo wyst¹pienie kolejnych jako:
-         1/(2^(n-2)) dla n oznaczaj¹ce numer encountera w wierszu, ograniczyæ dla (2-6)
-         iloœæ wierszy albo sta³a albo tez sobie wymyœlcie jakies prawdopodobienstwo idc
+         RectTransform bgrect = bg.GetComponent<RectTransform>();
+    /* 
+     tutaj mozna stworzyæ logike tworzenia mapy, czyli w sumie generacji ca³ej gry. proponuje:
+     w ka¿dym wierszu prznajmniej dwa encountery, prawdopodobieñstwo wyst¹pienie kolejnych jako:
+     1/(2^(n-2)) dla n oznaczaj¹ce numer encountera w wierszu, ograniczyæ dla (2-6)
+     iloœæ wierszy albo sta³a albo tez sobie wymyœlcie jakies prawdopodobienstwo idc
 
-         LUB stworzyæ nowy skrypt do generowania i skopiowaæ warttoœci jak w GridRender
+     LUB stworzyæ nowy skrypt do generowania i skopiowaæ warttoœci jak w GridRender
 
-         dodaæ generowanie zamiast tych wpisanych na twardo elementów \/ \/ \/
-         */
+     dodaæ generowanie zamiast tych wpisanych na twardo elementów \/ \/ \/
+     */
         enc[0] = new int[] { 0, 1, 1, 1, 2, 3, 4, 5, 0}; //{numer wiersza (0 - 11), numer obiektu w wierszu(1-6), typ obiektu(0, 1, 20, 21, 3), indexy obiektów z ktorymi jest po³¹czony na wyzszym wierszu, dodaæ wiecej wartoœci dla innych zmiennych (typ przeciwnika, poziom itp itd} 
         enc[1] = new int[] { 1, 1, 20, 7, 0, 0, 0, 0, 0}; //20-niewiadomy(walka), 21-niewiadomy(odpoczynek)
         enc[2] = new int[] { 1, 2, 1, 7, 0, 0, 0, 0, 0}; //1 - odpoczynek, 0 - walka
@@ -56,15 +56,16 @@ public class MapEncounters : MonoBehaviour
 
         for (int i = 0; enc[i] != null; i++)
         {
-            Spawn(enc[i][0], dist[enc[i][0]], enc[i][1], enc[i][2], rows);
+            Spawn(enc[i][0], dist[enc[i][0]], enc[i][1], enc[i][2], rows, bgrect);
         }
     }
     
-    public void Spawn(int a, int b, int c, int d, int e)
+    public void Spawn(int a, int b, int c, int d, int e, RectTransform bgrect) //automatycznie dodaje encounter na mape w zale¿noœci od tabelki enc[][]
     {
-        Vector3 position = new Vector3(((int)bgrect.rect.width / (1 + b)) * (c),
-            ((int)bgrect.rect.height / e) * (1 + a)         
-            ,0) - bgrect.position;
+        Vector3 position = new Vector3((float)bgrect.rect.width /-2 , (float)bgrect.rect.height/ -2, 0);
+        position += new Vector3(((float)bgrect.rect.width / (1 + b)) * (c),
+            ((float)bgrect.rect.height / e) * (1 + a)
+            , 0); //dzia³¹, nie ruszaæ
         switch (d)
         {
             case 0:
@@ -85,7 +86,7 @@ public class MapEncounters : MonoBehaviour
         }
         var obj = Instantiate(currGO, bgrect, true);
         obj.transform.localPosition = position;
-        Map.Add(obj.transform.position);
+        Map.Add(obj.GetComponent<RectTransform>().position); //zamienia end[][] w liste stworzonych na jej postawie GameObjectow
     }
 
 }

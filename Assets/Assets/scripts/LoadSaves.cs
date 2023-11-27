@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
@@ -12,7 +11,7 @@ public class LoadSaves : MonoBehaviour
     [SerializeField] private int sceneId; // 0 - WelcomeScreen, 1 - Fight Encounter, 2 - Rest Encounter, 3 - Endscreen, 4 - Map, 5 - Pick a card 
 
 
-    void assignSprite(Image chip) //najlepiej to random by³oby zmieniæ na jakas zapamietana w bazie wartosc, zeby chip by³ tego samego koloru dla konkretnego save
+    void assignSprite(Image chip) //najlepiej to random by³oby zmieniæ na jakas zapamietana w bazie wartosc, zeby chip by³ tego samego koloru dla konkretnego savea
     {
         chip.sprite = chips[Random.Range(0, 9)];
     }

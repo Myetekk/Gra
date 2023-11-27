@@ -5,11 +5,8 @@ using UnityEngine;
 public class CGFV : MonoBehaviour
 {
 
-    // Start is called before the first frame update
-    public void CreateGameFromValues()
+    public void CreateGameFromValues() //tutaj dodaæ generowanie ca³ej gry na podstawie zapisanych lub wygenereowanych wartoœci
     {
         Debug.Log("dziala");
-
-
     }
 }

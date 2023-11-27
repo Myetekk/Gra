@@ -15,7 +15,7 @@ public class hpPool : MonoBehaviour
     {
         img = GetComponent<Image>();
     }
-    public void UpdateHpValue()
+    public void UpdateHpValue() //TA FUNKCJA JEST PRZYPIÊTA DO GUZIKA ZNAJDUJ¥CEGO SIÊ W KÓ£KU Z HP W CELU TESTOWANIA, USUN¥Æ GUZIK PO KOÑCU TESTÓW
     {
         HP.transform.localPosition += new Vector3(0, (float)((-1 * HP.transform.localPosition.y) - (img.rectTransform.rect.height * ((hpMax - hpCurr) / hpMax))), 0);
     }
