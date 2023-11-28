@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class KeepBetweenScenes : MonoBehaviour
 {
-    // Start is called before the first frame update
-    private void Awake()
+    private void Awake() //skopiowane prosto z neta, funkcja dotyczy Ÿróde³ dŸwiêku ze sceny WelcomScreen
     {
         GameObject[] musicObj = GameObject.FindGameObjectsWithTag("MultiSceneSounds");
         if (musicObj.Length > 1)
