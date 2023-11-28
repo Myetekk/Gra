@@ -5,7 +5,7 @@ using System.Drawing;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class MapPaths : Graphic
+public class MapPathsOld : Graphic
 {
     //TEN KOD NIE JEST STAR¥ WERSJ¥ WBREW NAZWIE, TA WERSJA JEST NAJNOWSZA I DZIA£AJ¥CA 
 
