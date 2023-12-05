@@ -8,107 +8,12 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12004, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_PixelRect:
-    serializedVersion: 2
-    x: 0
-    y: 43
-    width: 1680
-    height: 967
-  m_ShowMode: 4
-  m_Title: Project
-  m_RootView: {fileID: 2}
-  m_MinSize: {x: 875, y: 300}
-  m_MaxSize: {x: 10000, y: 10000}
-  m_Maximized: 1
---- !u!114 &2
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12008, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children:
-  - {fileID: 3}
-  - {fileID: 5}
-  - {fileID: 4}
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1680
-    height: 967
-  m_MinSize: {x: 875, y: 300}
-  m_MaxSize: {x: 10000, y: 10000}
-  m_UseTopView: 1
-  m_TopViewHeight: 30
-  m_UseBottomView: 1
-  m_BottomViewHeight: 20
---- !u!114 &3
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12011, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1680
-    height: 30
-  m_MinSize: {x: 0, y: 0}
-  m_MaxSize: {x: 0, y: 0}
-  m_LastLoadedLayoutName: 
---- !u!114 &4
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12042, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 947
-    width: 1680
-    height: 20
-  m_MinSize: {x: 0, y: 0}
-  m_MaxSize: {x: 0, y: 0}
---- !u!114 &5
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 6}
+  - {fileID: 3}
   m_Position:
     serializedVersion: 2
     x: 0
@@ -118,192 +23,8 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 109
---- !u!114 &6
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children:
-  - {fileID: 7}
-  - {fileID: 12}
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1680
-    height: 917
-  m_MinSize: {x: 300, y: 100}
-  m_MaxSize: {x: 24288, y: 16192}
-  vertical: 0
-  controlID: 110
---- !u!114 &7
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children:
-  - {fileID: 8}
-  - {fileID: 11}
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1320
-    height: 917
-  m_MinSize: {x: 200, y: 100}
-  m_MaxSize: {x: 16192, y: 16192}
-  vertical: 1
-  controlID: 49
---- !u!114 &8
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children:
-  - {fileID: 9}
-  - {fileID: 10}
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1320
-    height: 636
-  m_MinSize: {x: 200, y: 50}
-  m_MaxSize: {x: 16192, y: 8096}
-  vertical: 0
-  controlID: 50
---- !u!114 &9
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 364
-    height: 636
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 14}
-  m_Panes:
-  - {fileID: 14}
-  m_Selected: 0
-  m_LastSelected: 0
---- !u!114 &10
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: SceneView
-  m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-    x: 364
-    y: 0
-    width: 956
-    height: 636
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 15}
-  m_Panes:
-  - {fileID: 15}
-  - {fileID: 16}
-  - {fileID: 13}
-  m_Selected: 0
-  m_LastSelected: 1
---- !u!114 &11
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ProjectBrowser
-  m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 636
-    width: 1320
-    height: 281
-  m_MinSize: {x: 231, y: 271}
-  m_MaxSize: {x: 10001, y: 10021}
-  m_ActualView: {fileID: 17}
-  m_Panes:
-  - {fileID: 17}
-  - {fileID: 18}
-  - {fileID: 19}
-  m_Selected: 0
-  m_LastSelected: 2
---- !u!114 &12
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: Window
-  m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-    x: 1320
-    y: 0
-    width: 360
-    height: 917
-  m_MinSize: {x: 101, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 21}
-  m_Panes:
-  - {fileID: 20}
-  - {fileID: 21}
-  m_Selected: 1
-  m_LastSelected: 0
---- !u!114 &13
+  controlID: 54484
+--- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -339,16 +60,33 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_ViewTransforms:
     m_KeySerializationHelper:
+    - {fileID: -8062034069880520292, guid: 56551bd991a174b49878dadfce0279a2, type: 2}
     - {fileID: -948026760917083751, guid: aeb682791b38f204499131db404bdf2c, type: 2}
     m_ValueSerializationHelper:
-    - e00: 1.039734
+    - e00: 0.7813811
       e01: 0
       e02: 0
-      e03: -51.220673
+      e03: -74.423615
       e10: 0
-      e11: 1.039734
+      e11: 0.7813811
       e12: 0
-      e13: 149.38168
+      e13: 24.534256
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    - e00: 0.1
+      e01: 0
+      e02: 0
+      e03: 239.05798
+      e10: 0
+      e11: 0.1
+      e12: 0
+      e13: 263.10806
       e20: 0
       e21: 0
       e22: 1
@@ -370,10 +108,111 @@ MonoBehaviour:
   m_MiniTool: 0
   m_LockTracker:
     m_IsLocked: 0
-  m_CurrentEditor: 1
+  m_CurrentEditor: 0
   m_LayerEditor:
     m_SelectedLayerIndex: 0
---- !u!114 &14
+--- !u!114 &3
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 4}
+  - {fileID: 15}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1680
+    height: 917
+  m_MinSize: {x: 300, y: 100}
+  m_MaxSize: {x: 24288, y: 16192}
+  vertical: 0
+  controlID: 54485
+--- !u!114 &4
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 5}
+  - {fileID: 11}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1320
+    height: 917
+  m_MinSize: {x: 200, y: 100}
+  m_MaxSize: {x: 16192, y: 16192}
+  vertical: 1
+  controlID: 54486
+--- !u!114 &5
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 6}
+  - {fileID: 8}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1320
+    height: 636
+  m_MinSize: {x: 200, y: 50}
+  m_MaxSize: {x: 16192, y: 8096}
+  vertical: 0
+  controlID: 54487
+--- !u!114 &6
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 364
+    height: 636
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 7}
+  m_Panes:
+  - {fileID: 7}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -410,9 +249,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: a2620000
-      m_LastClickedID: 0
-      m_ExpandedIDs: 02f7ffff9cf7ffff16fbffffe26600002a67000034670000
+      m_SelectedIDs: d484fcff
+      m_LastClickedID: -228140
+      m_ExpandedIDs: d484fcffbc43fdff5c44fdff144ffdff6469fdff0af4ffff16fbffffcc61000068620000b0620000d46200007ed20000b4d2000026d3000010dd0000b6dd000026de00008cdf000096df0000ccdf0000dcdf000006e000004ce0000060e0000066e00000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -428,7 +267,7 @@ MonoBehaviour:
         m_IsRenaming: 0
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 9}
+        m_ClientGUIView: {fileID: 6}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -436,7 +275,35 @@ MonoBehaviour:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
   m_WindowGUID: 4c969a2b90040154d917609493e03593
---- !u!114 &15
+--- !u!114 &8
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: AnimatorControllerTool
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 364
+    y: 0
+    width: 956
+    height: 636
+  m_MinSize: {x: 102, y: 121}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 2}
+  m_Panes:
+  - {fileID: 9}
+  - {fileID: 10}
+  - {fileID: 2}
+  m_Selected: 2
+  m_LastSelected: 1
+--- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -805,9 +672,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 484.2503, y: 934.80066, z: 0}
+    m_Target: {x: 274.15826, y: 522.47876, z: -127.26965}
     speed: 2
-    m_Value: {x: 484.2503, y: 934.80066, z: 0}
+    m_Value: {x: 274.15826, y: 522.47876, z: -127.26965}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -857,9 +724,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 1058.5197
+    m_Target: 488.54626
     speed: 2
-    m_Value: 1058.5197
+    m_Value: 488.54626
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -884,7 +751,7 @@ MonoBehaviour:
   m_SceneVisActive: 1
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
---- !u!114 &16
+--- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -951,7 +818,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -982,7 +849,35 @@ MonoBehaviour:
   m_LowResolutionForAspectRatios: 01000000000000000000
   m_XRRenderMode: 0
   m_RenderTexture: {fileID: 0}
---- !u!114 &17
+--- !u!114 &11
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: AnimationWindow
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 636
+    width: 1320
+    height: 281
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 14}
+  m_Panes:
+  - {fileID: 12}
+  - {fileID: 13}
+  - {fileID: 14}
+  m_Selected: 2
+  m_LastSelected: 0
+--- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1027,7 +922,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Assets/scripts
+    - Assets/Assets/sprites
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -1035,30 +930,30 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Assets/scripts
+  - Assets/Assets/sprites
   m_LastFoldersGridSize: 64
   m_LastProjectPath: C:\Users\pawel\My project
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 36}
-    m_SelectedIDs: a2620000
-    m_LastClickedID: 25250
-    m_ExpandedIDs: 00000000826200008462000000ca9a3b
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: d2640000
+    m_LastClickedID: 25810
+    m_ExpandedIDs: 00000000b4640000b664000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: fonts
+      m_OriginalName: fonts
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 25806
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 11}
     m_SearchString: 
@@ -1072,7 +967,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000008262000084620000
+    m_ExpandedIDs: 00000000b4640000b6640000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1097,8 +992,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
+    m_SelectedInstanceIDs: 3ce00000
+    m_LastClickedInstanceID: 57404
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
@@ -1128,7 +1023,7 @@ MonoBehaviour:
     m_GridSize: 64
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 207
---- !u!114 &18
+--- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1162,7 +1057,7 @@ MonoBehaviour:
     m_LastAppliedPresetName: Default
     m_SaveData: []
     m_OverlaysVisible: 1
---- !u!114 &19
+--- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1198,8 +1093,35 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 117620
---- !u!114 &20
+  m_LastSelectedObjectID: -228140
+--- !u!114 &15
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: InspectorWindow
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 1320
+    y: 0
+    width: 360
+    height: 917
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 16}
+  m_Panes:
+  - {fileID: 16}
+  - {fileID: 17}
+  m_Selected: 0
+  m_LastSelected: 1
+--- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1246,7 +1168,7 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_PreviewWindow: {fileID: 0}
---- !u!114 &21
+--- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1280,16 +1202,16 @@ MonoBehaviour:
     m_LastAppliedPresetName: Default
     m_SaveData: []
     m_OverlaysVisible: 1
-  progressMessageClearTime: 945.8647796
+  progressMessageClearTime: -1
   notificationClearTime: -1
   timeSinceLastRotation: -1
   currentBranchAndRemoteHasUpdate: 0
-  currentTrackingStatusHasUpdate: 0
-  currentStatusEntriesHasUpdate: 0
-  repositoryProgressHasUpdate: 0
-  appManagerProgressHasUpdate: 0
-  changeTab: 5
-  activeTab: 5
+  currentTrackingStatusHasUpdate: 1
+  currentStatusEntriesHasUpdate: 1
+  repositoryProgressHasUpdate: 1
+  appManagerProgressHasUpdate: 1
+  changeTab: 3
+  activeTab: 3
   initProjectView:
     hasCompletedInitialCheck: 1
     isUserDataPresent: 1
@@ -1353,14 +1275,14 @@ MonoBehaviour:
         treeIsCheckable: 0
         checkState: 0
       selectedNode:
-        path: 
-        label: 
-        level: 0
+        path: master
+        label: master
+        level: 1
         isFolder: 0
         isContainer: 0
         isCollapsed: 0
         isHidden: 0
-        isActive: 0
+        isActive: 1
         treeIsCheckable: 0
         checkState: 0
     treeRemotes:
@@ -1368,10 +1290,21 @@ MonoBehaviour:
       folders:
         keys:
         - Remote branches
+        - origin
         values:
         - path: Remote branches
           label: Remote branches
           level: 0
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 0
+          checkState: 0
+        - path: origin
+          label: origin
+          level: 1
           isFolder: 1
           isContainer: 0
           isCollapsed: 0
@@ -1398,6 +1331,36 @@ MonoBehaviour:
         isActive: 0
         treeIsCheckable: 0
         checkState: 0
+      - path: origin
+        label: origin
+        level: 1
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+      - path: origin/main
+        label: main
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+      - path: origin/master
+        label: master
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
       selectedNode:
         path: 
         label: 
@@ -1413,19 +1376,19 @@ MonoBehaviour:
     newBranchName: 
     scroll: {x: 0, y: 0}
     disableDelete: 1
-    disableCreate: 1
+    disableCreate: 0
     lastLocalAndRemoteBranchListChangedEvent:
-      updatedTimeString: 2023-12-05T20:17:23.265+01:00
+      updatedTimeString: 2023-11-20T01:16:22.656+01:00
       cacheType: 2
     lastCurrentBranchAndRemoteChange:
-      updatedTimeString: 2023-12-05T20:11:42.067+01:00
+      updatedTimeString: 2023-11-20T01:16:25.216+01:00
       cacheType: 1
     currentBranch:
       name: master
-      tracking: 
+      tracking: origin/master
     currentRemote:
       name: origin
-      url: https://github.com/Myetekk/Gra.git
+      url: https://github.com/R0sesAreRed/UnityProject.git
       login: 
       user: 
       host: 
@@ -1433,65 +1396,31 @@ MonoBehaviour:
       token: 
     localBranches:
     - name: master
-      tracking: 
+      tracking: origin/master
     - name: main
       tracking: 
-    remoteBranches: []
+    remoteBranches:
+    - name: origin/main
+      tracking: '[None]'
+    - name: origin/master
+      tracking: '[None]'
   changesView:
-    currentBranchHasUpdate: 0
-    currentStatusEntriesHasUpdate: 0
-    currentLocksHasUpdate: 0
+    currentBranchHasUpdate: 1
+    currentStatusEntriesHasUpdate: 1
+    currentLocksHasUpdate: 1
     commitBody: 
     commitMessage: 
     currentBranch: '[master]'
     treeScroll: {x: 0, y: 0}
     treeChanges:
       assets:
-        keys:
-        - 0000000000000000b000000000000000
-        values:
-        - path: ProjectSettings\EditorBuildSettings.asset
-          label: EditorBuildSettings.asset
-          level: 1
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: ProjectSettings\EditorBuildSettings.asset
-            fullPath: C:\Users\pawel\My project\ProjectSettings\EditorBuildSettings.asset
-            projectPath: ProjectSettings\EditorBuildSettings.asset
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 3
+        keys: []
+        values: []
       folders:
         keys:
-        - ProjectSettings
         - UserSettings
         - UserSettings\Layouts
         values:
-        - path: ProjectSettings
-          label: ProjectSettings
-          level: 0
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
         - path: UserSettings
           label: UserSettings
           level: 0
@@ -1556,42 +1485,6 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
-      - path: ProjectSettings
-        label: ProjectSettings
-        level: 0
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: ProjectSettings\EditorBuildSettings.asset
-        label: EditorBuildSettings.asset
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: ProjectSettings\EditorBuildSettings.asset
-          fullPath: C:\Users\pawel\My project\ProjectSettings\EditorBuildSettings.asset
-          projectPath: ProjectSettings\EditorBuildSettings.asset
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 3
       - path: UserSettings
         label: UserSettings
         level: 0
@@ -1702,12 +1595,6 @@ MonoBehaviour:
           indexStatus: 0
           workTreeStatus: 0
     gitStatusEntries:
-    - path: ProjectSettings\EditorBuildSettings.asset
-      fullPath: C:\Users\pawel\My project\ProjectSettings\EditorBuildSettings.asset
-      projectPath: ProjectSettings\EditorBuildSettings.asset
-      originalPath: 
-      indexStatus: 0
-      workTreeStatus: 3
     - path: UserSettings\EditorUserSettings.asset
       fullPath: C:\Users\pawel\My project\UserSettings\EditorUserSettings.asset
       projectPath: UserSettings\EditorUserSettings.asset
@@ -1726,257 +1613,20 @@ MonoBehaviour:
       originalPath: 
       indexStatus: 0
       workTreeStatus: 3
-    changedFilesText: 4 changed files
+    changedFilesText: 3 changed files
     lastCurrentBranchChangedEvent:
-      updatedTimeString: 2023-11-28T17:50:35.522+01:00
+      updatedTimeString: 2023-11-28T16:15:33.677+01:00
       cacheType: 1
     lastStatusEntriesChangedEvent:
-      updatedTimeString: 2023-11-28T17:51:00.690+01:00
+      updatedTimeString: 2023-11-28T17:02:52.615+01:00
       cacheType: 6
     lastLocksChangedEvent:
-      updatedTimeString: 2023-11-28T17:50:35.239+01:00
+      updatedTimeString: 2023-11-28T17:02:17.244+01:00
       cacheType: 7
   historyView:
     currentLogHasUpdate: 0
     currentTrackingStatusHasUpdate: 0
     logEntries:
-    - commitID: 23647897207247f19c527cc2371350465f303554
-      mergeA: 
-      mergeB: 
-      authorName: R0sesAreRed
-      authorEmail: pawelo.oparczyk@gmail.com
-      commitEmail: pawelo.oparczyk@gmail.com
-      commitName: R0sesAreRed
-      summary: card picker done
-      description: card picker done
-      timeString: 2023-11-28T17:40:51.000+01:00
-      commitTimeString: 2023-11-28T17:40:51.000+01:00
-      changes:
-      - path: Assets\Assets\Anims\Image.controller
-        fullPath: C:\Users\pawel\My project\Assets\Assets\Anims\Image.controller
-        projectPath: Assets\Assets\Anims\Image.controller
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Assets\Anims\Image.controller.meta
-        fullPath: C:\Users\pawel\My project\Assets\Assets\Anims\Image.controller.meta
-        projectPath: Assets\Assets\Anims\Image.controller.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Assets\Anims\PickCardBG.controller
-        fullPath: C:\Users\pawel\My project\Assets\Assets\Anims\PickCardBG.controller
-        projectPath: Assets\Assets\Anims\PickCardBG.controller
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Assets\Anims\PickCardBG.controller.meta
-        fullPath: C:\Users\pawel\My project\Assets\Assets\Anims\PickCardBG.controller.meta
-        projectPath: Assets\Assets\Anims\PickCardBG.controller.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Assets\Anims\card pick slide.anim
-        fullPath: C:\Users\pawel\My project\Assets\Assets\Anims\card pick slide.anim
-        projectPath: Assets\Assets\Anims\card pick slide.anim
-        originalPath: Assets\Assets\Anims\canvas slide.anim
-        indexStatus: 6
-        workTreeStatus: 0
-      - path: Assets\Assets\Anims\card pick slide.anim.meta
-        fullPath: C:\Users\pawel\My project\Assets\Assets\Anims\card pick slide.anim.meta
-        projectPath: Assets\Assets\Anims\card pick slide.anim.meta
-        originalPath: Assets\Assets\Anims\canvas slide.anim.meta
-        indexStatus: 6
-        workTreeStatus: 0
-      - path: Assets\Assets\scripts\CardPicker.cs
-        fullPath: C:\Users\pawel\My project\Assets\Assets\scripts\CardPicker.cs
-        projectPath: Assets\Assets\scripts\CardPicker.cs
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Assets\scripts\CardPicker.cs.meta
-        fullPath: C:\Users\pawel\My project\Assets\Assets\scripts\CardPicker.cs.meta
-        projectPath: Assets\Assets\scripts\CardPicker.cs.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Assets\sprites\CardPickBG.png
-        fullPath: C:\Users\pawel\My project\Assets\Assets\sprites\CardPickBG.png
-        projectPath: Assets\Assets\sprites\CardPickBG.png
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Assets\sprites\CardPickBG.png.meta
-        fullPath: C:\Users\pawel\My project\Assets\Assets\sprites\CardPickBG.png.meta
-        projectPath: Assets\Assets\sprites\CardPickBG.png.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Assets\sprites\stay.anim
-        fullPath: C:\Users\pawel\My project\Assets\Assets\sprites\stay.anim
-        projectPath: Assets\Assets\sprites\stay.anim
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Assets\sprites\stay.anim.meta
-        fullPath: C:\Users\pawel\My project\Assets\Assets\sprites\stay.anim.meta
-        projectPath: Assets\Assets\sprites\stay.anim.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Scenes\Encounter.unity
-        fullPath: C:\Users\pawel\My project\Assets\Scenes\Encounter.unity
-        projectPath: Assets\Scenes\Encounter.unity
-        originalPath: 
-        indexStatus: 3
-        workTreeStatus: 0
-    - commitID: 7953b568d9199adee928a3bb80290f614156832a
-      mergeA: 
-      mergeB: 
-      authorName: R0sesAreRed
-      authorEmail: pawelo.oparczyk@gmail.com
-      commitEmail: pawelo.oparczyk@gmail.com
-      commitName: R0sesAreRed
-      summary: added save info display, playing and inspecting cards
-      description: added save info display, Dispaly info contationg them, playing
-        and inspecting cards in kard script
-      timeString: 2023-11-28T00:37:23.000+01:00
-      commitTimeString: 2023-11-28T00:37:23.000+01:00
-      changes:
-      - path: Assets\Assets\scripts\CGFV.cs
-        fullPath: C:\Users\pawel\My project\Assets\Assets\scripts\CGFV.cs
-        projectPath: Assets\Assets\scripts\CGFV.cs
-        originalPath: 
-        indexStatus: 3
-        workTreeStatus: 0
-      - path: Assets\Assets\scripts\CreateEncounter.cs
-        fullPath: C:\Users\pawel\My project\Assets\Assets\scripts\CreateEncounter.cs
-        projectPath: Assets\Assets\scripts\CreateEncounter.cs
-        originalPath: 
-        indexStatus: 3
-        workTreeStatus: 0
-      - path: Assets\Assets\scripts\DisplayInfo.cs
-        fullPath: C:\Users\pawel\My project\Assets\Assets\scripts\DisplayInfo.cs
-        projectPath: Assets\Assets\scripts\DisplayInfo.cs
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Assets\scripts\DisplayInfo.cs.meta
-        fullPath: C:\Users\pawel\My project\Assets\Assets\scripts\DisplayInfo.cs.meta
-        projectPath: Assets\Assets\scripts\DisplayInfo.cs.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Assets\scripts\Kard.cs
-        fullPath: C:\Users\pawel\My project\Assets\Assets\scripts\Kard.cs
-        projectPath: Assets\Assets\scripts\Kard.cs
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Assets\scripts\Kard.cs.meta
-        fullPath: C:\Users\pawel\My project\Assets\Assets\scripts\Kard.cs.meta
-        projectPath: Assets\Assets\scripts\Kard.cs.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Assets\scripts\KardKounter.cs
-        fullPath: C:\Users\pawel\My project\Assets\Assets\scripts\KardKounter.cs
-        projectPath: Assets\Assets\scripts\KardKounter.cs
-        originalPath: 
-        indexStatus: 3
-        workTreeStatus: 0
-      - path: Assets\Assets\scripts\KeepBetweenScenes.cs
-        fullPath: C:\Users\pawel\My project\Assets\Assets\scripts\KeepBetweenScenes.cs
-        projectPath: Assets\Assets\scripts\KeepBetweenScenes.cs
-        originalPath: 
-        indexStatus: 3
-        workTreeStatus: 0
-      - path: Assets\Assets\scripts\KeyBoardInputs.cs
-        fullPath: C:\Users\pawel\My project\Assets\Assets\scripts\KeyBoardInputs.cs
-        projectPath: Assets\Assets\scripts\KeyBoardInputs.cs
-        originalPath: 
-        indexStatus: 3
-        workTreeStatus: 0
-      - path: Assets\Assets\scripts\LoadSaves.cs
-        fullPath: C:\Users\pawel\My project\Assets\Assets\scripts\LoadSaves.cs
-        projectPath: Assets\Assets\scripts\LoadSaves.cs
-        originalPath: 
-        indexStatus: 3
-        workTreeStatus: 0
-      - path: Assets\Assets\scripts\MapEncounters.cs
-        fullPath: C:\Users\pawel\My project\Assets\Assets\scripts\MapEncounters.cs
-        projectPath: Assets\Assets\scripts\MapEncounters.cs
-        originalPath: 
-        indexStatus: 3
-        workTreeStatus: 0
-      - path: Assets\Assets\scripts\MapPaths.cs
-        fullPath: C:\Users\pawel\My project\Assets\Assets\scripts\MapPaths.cs
-        projectPath: Assets\Assets\scripts\MapPaths.cs
-        originalPath: 
-        indexStatus: 5
-        workTreeStatus: 0
-      - path: Assets\Assets\scripts\MapPathsOld.cs
-        fullPath: C:\Users\pawel\My project\Assets\Assets\scripts\MapPathsOld.cs
-        projectPath: Assets\Assets\scripts\MapPathsOld.cs
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Assets\scripts\MapPathsOld.cs.meta
-        fullPath: C:\Users\pawel\My project\Assets\Assets\scripts\MapPathsOld.cs.meta
-        projectPath: Assets\Assets\scripts\MapPathsOld.cs.meta
-        originalPath: Assets\Assets\scripts\MapPaths.cs.meta
-        indexStatus: 6
-        workTreeStatus: 0
-      - path: Assets\Assets\scripts\hpPool.cs
-        fullPath: C:\Users\pawel\My project\Assets\Assets\scripts\hpPool.cs
-        projectPath: Assets\Assets\scripts\hpPool.cs
-        originalPath: 
-        indexStatus: 3
-        workTreeStatus: 0
-      - path: Assets\Assets\scripts\manabar.cs
-        fullPath: C:\Users\pawel\My project\Assets\Assets\scripts\manabar.cs
-        projectPath: Assets\Assets\scripts\manabar.cs
-        originalPath: 
-        indexStatus: 3
-        workTreeStatus: 0
-      - path: Assets\Assets\sprites\transparentcard.png
-        fullPath: C:\Users\pawel\My project\Assets\Assets\sprites\transparentcard.png
-        projectPath: Assets\Assets\sprites\transparentcard.png
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Assets\sprites\transparentcard.png.meta
-        fullPath: C:\Users\pawel\My project\Assets\Assets\sprites\transparentcard.png.meta
-        projectPath: Assets\Assets\sprites\transparentcard.png.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Scenes\Encounter.unity
-        fullPath: C:\Users\pawel\My project\Assets\Scenes\Encounter.unity
-        projectPath: Assets\Scenes\Encounter.unity
-        originalPath: 
-        indexStatus: 3
-        workTreeStatus: 0
-      - path: Assets\Scenes\Map.unity
-        fullPath: C:\Users\pawel\My project\Assets\Scenes\Map.unity
-        projectPath: Assets\Scenes\Map.unity
-        originalPath: 
-        indexStatus: 3
-        workTreeStatus: 0
-      - path: Assets\Scenes\Welcome_Screen.unity
-        fullPath: C:\Users\pawel\My project\Assets\Scenes\Welcome_Screen.unity
-        projectPath: Assets\Scenes\Welcome_Screen.unity
-        originalPath: 
-        indexStatus: 3
-        workTreeStatus: 0
-      - path: Assets\TextMesh Pro\Resources\Fonts & Materials\LiberationSans SDF.asset
-        fullPath: C:\Users\pawel\My project\Assets\TextMesh Pro\Resources\Fonts &
-          Materials\LiberationSans SDF.asset
-        projectPath: Assets\TextMesh Pro\Resources\Fonts & Materials\LiberationSans
-          SDF.asset
-        originalPath: 
-        indexStatus: 3
-        workTreeStatus: 0
     - commitID: 1e49a17d4a67fbaafc8c66bf130ce9de9210a49d
       mergeA: 
       mergeB: 
@@ -5565,251 +5215,14 @@ MonoBehaviour:
         workTreeStatus: 0
     statusAhead: 0
     lastLogChangedEvent:
-      updatedTimeString: 2023-12-05T20:17:23.391+01:00
+      updatedTimeString: 2023-11-20T01:15:10.386+01:00
       cacheType: 3
     lastTrackingStatusChangedEvent:
-      updatedTimeString: 2023-12-05T20:18:16.373+01:00
+      updatedTimeString: 2023-11-20T01:15:10.362+01:00
       cacheType: 5
     historyControl:
       scroll: {x: 0, y: 0}
       entries:
-      - commitID: 23647897207247f19c527cc2371350465f303554
-        mergeA: 
-        mergeB: 
-        authorName: R0sesAreRed
-        authorEmail: pawelo.oparczyk@gmail.com
-        commitEmail: pawelo.oparczyk@gmail.com
-        commitName: R0sesAreRed
-        summary: card picker done
-        description: card picker done
-        timeString: 2023-11-28T17:40:51.000+01:00
-        commitTimeString: 2023-11-28T17:40:51.000+01:00
-        changes:
-        - path: Assets\Assets\Anims\Image.controller
-          fullPath: C:\Users\pawel\My project\Assets\Assets\Anims\Image.controller
-          projectPath: Assets\Assets\Anims\Image.controller
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Assets\Anims\Image.controller.meta
-          fullPath: C:\Users\pawel\My project\Assets\Assets\Anims\Image.controller.meta
-          projectPath: Assets\Assets\Anims\Image.controller.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Assets\Anims\PickCardBG.controller
-          fullPath: C:\Users\pawel\My project\Assets\Assets\Anims\PickCardBG.controller
-          projectPath: Assets\Assets\Anims\PickCardBG.controller
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Assets\Anims\PickCardBG.controller.meta
-          fullPath: C:\Users\pawel\My project\Assets\Assets\Anims\PickCardBG.controller.meta
-          projectPath: Assets\Assets\Anims\PickCardBG.controller.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Assets\Anims\card pick slide.anim
-          fullPath: C:\Users\pawel\My project\Assets\Assets\Anims\card pick slide.anim
-          projectPath: Assets\Assets\Anims\card pick slide.anim
-          originalPath: Assets\Assets\Anims\canvas slide.anim
-          indexStatus: 6
-          workTreeStatus: 0
-        - path: Assets\Assets\Anims\card pick slide.anim.meta
-          fullPath: C:\Users\pawel\My project\Assets\Assets\Anims\card pick slide.anim.meta
-          projectPath: Assets\Assets\Anims\card pick slide.anim.meta
-          originalPath: Assets\Assets\Anims\canvas slide.anim.meta
-          indexStatus: 6
-          workTreeStatus: 0
-        - path: Assets\Assets\scripts\CardPicker.cs
-          fullPath: C:\Users\pawel\My project\Assets\Assets\scripts\CardPicker.cs
-          projectPath: Assets\Assets\scripts\CardPicker.cs
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Assets\scripts\CardPicker.cs.meta
-          fullPath: C:\Users\pawel\My project\Assets\Assets\scripts\CardPicker.cs.meta
-          projectPath: Assets\Assets\scripts\CardPicker.cs.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Assets\sprites\CardPickBG.png
-          fullPath: C:\Users\pawel\My project\Assets\Assets\sprites\CardPickBG.png
-          projectPath: Assets\Assets\sprites\CardPickBG.png
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Assets\sprites\CardPickBG.png.meta
-          fullPath: C:\Users\pawel\My project\Assets\Assets\sprites\CardPickBG.png.meta
-          projectPath: Assets\Assets\sprites\CardPickBG.png.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Assets\sprites\stay.anim
-          fullPath: C:\Users\pawel\My project\Assets\Assets\sprites\stay.anim
-          projectPath: Assets\Assets\sprites\stay.anim
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Assets\sprites\stay.anim.meta
-          fullPath: C:\Users\pawel\My project\Assets\Assets\sprites\stay.anim.meta
-          projectPath: Assets\Assets\sprites\stay.anim.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Scenes\Encounter.unity
-          fullPath: C:\Users\pawel\My project\Assets\Scenes\Encounter.unity
-          projectPath: Assets\Scenes\Encounter.unity
-          originalPath: 
-          indexStatus: 3
-          workTreeStatus: 0
-      - commitID: 7953b568d9199adee928a3bb80290f614156832a
-        mergeA: 
-        mergeB: 
-        authorName: R0sesAreRed
-        authorEmail: pawelo.oparczyk@gmail.com
-        commitEmail: pawelo.oparczyk@gmail.com
-        commitName: R0sesAreRed
-        summary: added save info display, playing and inspecting cards
-        description: added save info display, Dispaly info contationg them, playing
-          and inspecting cards in kard script
-        timeString: 2023-11-28T00:37:23.000+01:00
-        commitTimeString: 2023-11-28T00:37:23.000+01:00
-        changes:
-        - path: Assets\Assets\scripts\CGFV.cs
-          fullPath: C:\Users\pawel\My project\Assets\Assets\scripts\CGFV.cs
-          projectPath: Assets\Assets\scripts\CGFV.cs
-          originalPath: 
-          indexStatus: 3
-          workTreeStatus: 0
-        - path: Assets\Assets\scripts\CreateEncounter.cs
-          fullPath: C:\Users\pawel\My project\Assets\Assets\scripts\CreateEncounter.cs
-          projectPath: Assets\Assets\scripts\CreateEncounter.cs
-          originalPath: 
-          indexStatus: 3
-          workTreeStatus: 0
-        - path: Assets\Assets\scripts\DisplayInfo.cs
-          fullPath: C:\Users\pawel\My project\Assets\Assets\scripts\DisplayInfo.cs
-          projectPath: Assets\Assets\scripts\DisplayInfo.cs
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Assets\scripts\DisplayInfo.cs.meta
-          fullPath: C:\Users\pawel\My project\Assets\Assets\scripts\DisplayInfo.cs.meta
-          projectPath: Assets\Assets\scripts\DisplayInfo.cs.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Assets\scripts\Kard.cs
-          fullPath: C:\Users\pawel\My project\Assets\Assets\scripts\Kard.cs
-          projectPath: Assets\Assets\scripts\Kard.cs
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Assets\scripts\Kard.cs.meta
-          fullPath: C:\Users\pawel\My project\Assets\Assets\scripts\Kard.cs.meta
-          projectPath: Assets\Assets\scripts\Kard.cs.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Assets\scripts\KardKounter.cs
-          fullPath: C:\Users\pawel\My project\Assets\Assets\scripts\KardKounter.cs
-          projectPath: Assets\Assets\scripts\KardKounter.cs
-          originalPath: 
-          indexStatus: 3
-          workTreeStatus: 0
-        - path: Assets\Assets\scripts\KeepBetweenScenes.cs
-          fullPath: C:\Users\pawel\My project\Assets\Assets\scripts\KeepBetweenScenes.cs
-          projectPath: Assets\Assets\scripts\KeepBetweenScenes.cs
-          originalPath: 
-          indexStatus: 3
-          workTreeStatus: 0
-        - path: Assets\Assets\scripts\KeyBoardInputs.cs
-          fullPath: C:\Users\pawel\My project\Assets\Assets\scripts\KeyBoardInputs.cs
-          projectPath: Assets\Assets\scripts\KeyBoardInputs.cs
-          originalPath: 
-          indexStatus: 3
-          workTreeStatus: 0
-        - path: Assets\Assets\scripts\LoadSaves.cs
-          fullPath: C:\Users\pawel\My project\Assets\Assets\scripts\LoadSaves.cs
-          projectPath: Assets\Assets\scripts\LoadSaves.cs
-          originalPath: 
-          indexStatus: 3
-          workTreeStatus: 0
-        - path: Assets\Assets\scripts\MapEncounters.cs
-          fullPath: C:\Users\pawel\My project\Assets\Assets\scripts\MapEncounters.cs
-          projectPath: Assets\Assets\scripts\MapEncounters.cs
-          originalPath: 
-          indexStatus: 3
-          workTreeStatus: 0
-        - path: Assets\Assets\scripts\MapPaths.cs
-          fullPath: C:\Users\pawel\My project\Assets\Assets\scripts\MapPaths.cs
-          projectPath: Assets\Assets\scripts\MapPaths.cs
-          originalPath: 
-          indexStatus: 5
-          workTreeStatus: 0
-        - path: Assets\Assets\scripts\MapPathsOld.cs
-          fullPath: C:\Users\pawel\My project\Assets\Assets\scripts\MapPathsOld.cs
-          projectPath: Assets\Assets\scripts\MapPathsOld.cs
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Assets\scripts\MapPathsOld.cs.meta
-          fullPath: C:\Users\pawel\My project\Assets\Assets\scripts\MapPathsOld.cs.meta
-          projectPath: Assets\Assets\scripts\MapPathsOld.cs.meta
-          originalPath: Assets\Assets\scripts\MapPaths.cs.meta
-          indexStatus: 6
-          workTreeStatus: 0
-        - path: Assets\Assets\scripts\hpPool.cs
-          fullPath: C:\Users\pawel\My project\Assets\Assets\scripts\hpPool.cs
-          projectPath: Assets\Assets\scripts\hpPool.cs
-          originalPath: 
-          indexStatus: 3
-          workTreeStatus: 0
-        - path: Assets\Assets\scripts\manabar.cs
-          fullPath: C:\Users\pawel\My project\Assets\Assets\scripts\manabar.cs
-          projectPath: Assets\Assets\scripts\manabar.cs
-          originalPath: 
-          indexStatus: 3
-          workTreeStatus: 0
-        - path: Assets\Assets\sprites\transparentcard.png
-          fullPath: C:\Users\pawel\My project\Assets\Assets\sprites\transparentcard.png
-          projectPath: Assets\Assets\sprites\transparentcard.png
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Assets\sprites\transparentcard.png.meta
-          fullPath: C:\Users\pawel\My project\Assets\Assets\sprites\transparentcard.png.meta
-          projectPath: Assets\Assets\sprites\transparentcard.png.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Scenes\Encounter.unity
-          fullPath: C:\Users\pawel\My project\Assets\Scenes\Encounter.unity
-          projectPath: Assets\Scenes\Encounter.unity
-          originalPath: 
-          indexStatus: 3
-          workTreeStatus: 0
-        - path: Assets\Scenes\Map.unity
-          fullPath: C:\Users\pawel\My project\Assets\Scenes\Map.unity
-          projectPath: Assets\Scenes\Map.unity
-          originalPath: 
-          indexStatus: 3
-          workTreeStatus: 0
-        - path: Assets\Scenes\Welcome_Screen.unity
-          fullPath: C:\Users\pawel\My project\Assets\Scenes\Welcome_Screen.unity
-          projectPath: Assets\Scenes\Welcome_Screen.unity
-          originalPath: 
-          indexStatus: 3
-          workTreeStatus: 0
-        - path: Assets\TextMesh Pro\Resources\Fonts & Materials\LiberationSans SDF.asset
-          fullPath: C:\Users\pawel\My project\Assets\TextMesh Pro\Resources\Fonts
-            & Materials\LiberationSans SDF.asset
-          projectPath: Assets\TextMesh Pro\Resources\Fonts & Materials\LiberationSans
-            SDF.asset
-          originalPath: 
-          indexStatus: 3
-          workTreeStatus: 0
       - commitID: 1e49a17d4a67fbaafc8c66bf130ce9de9210a49d
         mergeA: 
         mergeB: 
@@ -9412,7 +8825,7 @@ MonoBehaviour:
           indexStatus: 4
           workTreeStatus: 0
       statusAhead: 0
-      selectedIndex: 4
+      selectedIndex: 2
     selectedEntry:
       commitID: c9a201ab3fdaebbe7c79583098174257af930ed8
       mergeA: 
@@ -10880,12 +10293,12 @@ MonoBehaviour:
       changingManually: 0
     hasRemote: 1
     lastCurrentRemoteChangedEvent:
-      updatedTimeString: 2023-12-05T20:23:47.065+01:00
+      updatedTimeString: 2023-11-27T23:55:07.113+01:00
       cacheType: 1
     metricsEnabled: 0
-    newRepositoryRemoteUrl: https://github.com/Myetekk/Gra.git
+    newRepositoryRemoteUrl: https://github.com/R0sesAreRed/UnityProject.git
     repositoryRemoteName: origin
-    repositoryRemoteUrl: https://github.com/Myetekk/Gra.git
+    repositoryRemoteUrl: https://github.com/R0sesAreRed/UnityProject.git
     scroll: {x: 0, y: 0}
     userSettingsView:
       gitName: R0sesAreRed
@@ -10894,7 +10307,7 @@ MonoBehaviour:
       newGitEmail: pawelo.oparczyk@gmail.com
       needsSaving: 0
       lastCheckUserChangedEvent:
-        updatedTimeString: 2023-12-05T20:18:10.176+01:00
+        updatedTimeString: 2023-11-28T00:35:17.733+01:00
         cacheType: 8
     webTimeout: 3000
     gitTimeout: 5000
@@ -10923,19 +10336,25 @@ MonoBehaviour:
         gitFileStatus: 0
         lockedAt: 1 sty 0001, 01:00
     lastCurrentRemoteChangedEvent:
-      updatedTimeString: 2023-11-28T17:50:35.522+01:00
+      updatedTimeString: 2023-11-20T01:15:10.337+01:00
       cacheType: 1
     lastLocksChangedEvent:
-      updatedTimeString: 2023-11-28T17:50:35.239+01:00
+      updatedTimeString: 2023-11-20T01:14:53.996+01:00
       cacheType: 7
     lastStatusEntriesChangedEvent:
-      updatedTimeString: 2023-11-28T17:51:01.742+01:00
+      updatedTimeString: 2023-11-20T01:15:20.101+01:00
       cacheType: 6
     lockedFiles: []
     gitStatusEntries:
-    - path: ProjectSettings\EditorBuildSettings.asset
-      fullPath: C:\Users\pawel\My project\ProjectSettings\EditorBuildSettings.asset
-      projectPath: ProjectSettings\EditorBuildSettings.asset
+    - path: Assets\Assets\scripts\MapEncounters.cs
+      fullPath: C:\Users\pawel\My project\Assets\Assets\scripts\MapEncounters.cs
+      projectPath: Assets\Assets\scripts\MapEncounters.cs
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Scenes\Map.unity
+      fullPath: C:\Users\pawel\My project\Assets\Scenes\Map.unity
+      projectPath: Assets\Scenes\Map.unity
       originalPath: 
       indexStatus: 0
       workTreeStatus: 3
@@ -10945,12 +10364,6 @@ MonoBehaviour:
       originalPath: 
       indexStatus: 0
       workTreeStatus: 3
-    - path: UserSettings\Layouts\CurrentMaximizeLayout.dwlt
-      fullPath: C:\Users\pawel\My project\UserSettings\Layouts\CurrentMaximizeLayout.dwlt
-      projectPath: UserSettings\Layouts\CurrentMaximizeLayout.dwlt
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
     - path: UserSettings\Layouts\default-2022.dwlt
       fullPath: C:\Users\pawel\My project\UserSettings\Layouts\default-2022.dwlt
       projectPath: UserSettings\Layouts\default-2022.dwlt
@@ -10969,27 +10382,27 @@ MonoBehaviour:
   hasRemote: 1
   currentRemoteName: origin
   currentBranch: master
-  currentRemoteUrl: https://github.com/Myetekk/Gra.git
+  currentRemoteUrl: https://github.com/R0sesAreRed/UnityProject.git
   statusAhead: 0
   statusBehind: 0
   hasItemsToCommit: 1
-  isTrackingRemoteBranch: 0
+  isTrackingRemoteBranch: 1
   currentBranchContent:
     m_Text: master
     m_Image: {fileID: 0}
     m_Tooltip: Active branch
   currentRemoteUrlContent:
-    m_Text: https://github.com/Myetekk/Gra.git
+    m_Text: https://github.com/R0sesAreRed/UnityProject.git
     m_Image: {fileID: 0}
     m_Tooltip: Url of the origin remote
   lastCurrentBranchAndRemoteChangedEvent:
-    updatedTimeString: 2023-12-05T20:23:47.065+01:00
+    updatedTimeString: 2023-11-28T00:37:32.809+01:00
     cacheType: 1
   lastTrackingStatusChangedEvent:
-    updatedTimeString: 2023-12-05T20:23:46.913+01:00
+    updatedTimeString: 2023-11-28T00:42:37.882+01:00
     cacheType: 5
   lastStatusEntriesChangedEvent:
-    updatedTimeString: 2023-12-05T20:23:46.902+01:00
+    updatedTimeString: 2023-11-28T00:42:37.841+01:00
     cacheType: 6
   pullButtonContent:
     m_Text: Pull
@@ -11007,8 +10420,8 @@ MonoBehaviour:
     m_Text: Fetch
     m_Image: {fileID: 0}
     m_Tooltip: 
-  repositoryProgressValue: 0.33333334
-  repositoryProgressMessage: Loading the history...
+  repositoryProgressValue: 1
+  repositoryProgressMessage: Listing changed files...
   appManagerProgressValue: 1
   appManagerProgressMessage: Initialized
   connections: []

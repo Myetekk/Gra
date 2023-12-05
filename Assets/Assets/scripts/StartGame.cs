@@ -13,7 +13,6 @@ public class StartGame : MonoBehaviour
     {               
         SceneManager.LoadScene(sceneId);
         GetComponentInParent<CGFV>().CreateGameFromValues();
-
     }
 
 }
