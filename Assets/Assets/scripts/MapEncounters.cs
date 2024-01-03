@@ -21,32 +21,48 @@ public class MapEncounters : MonoBehaviour
     public int[][] enc = new int[62][]; //max 10 wierszy, max 6 encounterów na wiersz + wiersz 0 (start) + wiersz 11 (boss)
     public float thickness = 10f;
     private int rows = 0;
+    private int index = 0;
+    private int[] itemsInRows = new int[6] { 1, 0, 0, 0, 0, 1 };
+
+
+
+
+
     void Start()
     {
          RectTransform bgrect = bg.GetComponent<RectTransform>();
-    /* 
-     tutaj mozna stworzyæ logike tworzenia mapy, czyli w sumie generacji ca³ej gry. proponuje:
-     w ka¿dym wierszu prznajmniej dwa encountery, prawdopodobieñstwo wyst¹pienie kolejnych jako:
-     1/(2^(n-2)) dla n oznaczaj¹ce numer encountera w wierszu, ograniczyæ dla (2-6)
-     iloœæ wierszy albo sta³a albo tez sobie wymyœlcie jakies prawdopodobienstwo idc
+        /* 
+         tutaj mozna stworzyæ logike tworzenia mapy, czyli w sumie generacji ca³ej gry. proponuje:
+         w ka¿dym wierszu prznajmniej dwa encountery, prawdopodobieñstwo wyst¹pienie kolejnych jako:
+         1/(2^(n-2)) dla n oznaczaj¹ce numer encountera w wierszu, ograniczyæ dla (2-6)
+         iloœæ wierszy albo sta³a albo tez sobie wymyœlcie jakies prawdopodobienstwo idc
 
-     LUB stworzyæ nowy skrypt do generowania i skopiowaæ warttoœci jak w GridRender
+         LUB stworzyæ nowy skrypt do generowania i skopiowaæ warttoœci jak w GridRender
 
-     dodaæ generowanie zamiast tych wpisanych na twardo elementów \/ \/ \/
-     */
-        enc[0] = new int[] { 0, 1, 1, 1, 2, 3, 4, 5, 0}; //{numer wiersza (0 - 11), numer obiektu w wierszu(1-6), typ obiektu(0, 1, 20, 21, 3), indexy obiektów z ktorymi jest po³¹czony na wyzszym wierszu, dodaæ wiecej wartoœci dla innych zmiennych (typ przeciwnika, poziom itp itd} 
-        enc[1] = new int[] { 1, 1, 20, 7, 0, 0, 0, 0, 0}; //20-niewiadomy(walka), 21-niewiadomy(odpoczynek)
-        enc[2] = new int[] { 1, 2, 1, 7, 0, 0, 0, 0, 0}; //1 - odpoczynek, 0 - walka
-        enc[3] = new int[] { 1, 3, 0, 7, 0, 0, 0, 0, 0};
-        enc[4] = new int[] { 1, 4, 21, 7, 6, 0, 0, 0, 0};
-        enc[5] = new int[] { 1, 5, 21, 7, 6, 0, 0, 0, 0};
-        enc[6] = new int[] { 2, 1, 21, 8, 0, 0, 0, 0, 0 };
-        enc[7] = new int[] { 2, 2, 21, 8, 0, 0, 0, 0, 0 };
-        enc[8] = new int[] { 3, 1, 21, 9, 10, 11, 0, 0, 0};
-        enc[9] = new int[] { 4, 1, 21, 12, 0, 0, 0, 0, 0 };
-        enc[10] = new int[] { 4, 2, 21, 12, 0, 0, 0, 0, 0 };
-        enc[11] = new int[] { 4, 3, 21, 12, 0, 0, 0, 0, 0 };
-        enc[12] = new int[] { 5, 1, 3, 0, 0, 0, 0, 0, 0 }; //3 - boss fight
+         dodaæ generowanie zamiast tych wpisanych na twardo elementów \/ \/ \/
+         */
+
+
+
+        //enc[0] = new int[] { 0, 1, 1, 1, 2, 3, 4, 5, 0}; // { numer wiersza (0 - 11), numer obiektu w wierszu(1-6), typ obiektu(0, 1, 20, 21, 3), indexy obiektów z ktorymi jest po³¹czony na wyzszym wierszu, dodaæ wiecej wartoœci dla innych zmiennych (typ przeciwnika, poziom itp itd) } 
+        //enc[1] = new int[] { 1, 1, 20, 7, 0, 0, 0, 0, 0}; // 0 - walka, 1 - odpoczynek, 20-niewiadomy(walka), 21-niewiadomy(odpoczynek), 3 - boss fight
+        //enc[2] = new int[] { 1, 2, 1, 7, 0, 0, 0, 0, 0}; 
+        //enc[3] = new int[] { 1, 3, 0, 7, 0, 0, 0, 0, 0};
+        //enc[4] = new int[] { 1, 4, 21, 7, 6, 0, 0, 0, 0};
+        //enc[5] = new int[] { 1, 5, 21, 7, 6, 0, 0, 0, 0};
+        //enc[6] = new int[] { 2, 1, 21, 8, 0, 0, 0, 0, 0 };
+        //enc[7] = new int[] { 2, 2, 21, 8, 0, 0, 0, 0, 0 };
+        //enc[8] = new int[] { 3, 1, 21, 9, 10, 11, 0, 0, 0};
+        //enc[9] = new int[] { 4, 1, 21, 12, 0, 0, 0, 0, 0 };
+        //enc[10] = new int[] { 4, 2, 21, 12, 0, 0, 0, 0, 0 };
+        //enc[11] = new int[] { 4, 3, 21, 12, 0, 0, 0, 0, 0 };
+        //enc[12] = new int[] { 5, 1, 3, 0, 0, 0, 0, 0, 0 }; 
+
+        RandomizeMap();
+        CreatePaths();
+
+
+
         for (int i = 0; enc[i] != null; i++) //tak d³ugo a¿ elementy istniej¹
         { 
             dist[enc[i][0]] += 1; //zlicza iloœæ elementów w kazdym wierszu
@@ -59,6 +75,10 @@ public class MapEncounters : MonoBehaviour
             Spawn(enc[i][0], dist[enc[i][0]], enc[i][1], enc[i][2], rows, bgrect);
         }
     }
+
+
+
+
     
     public void Spawn(int a, int b, int c, int d, int e, RectTransform bgrect) //automatycznie dodaje encounter na mape w zale¿noœci od tabelki enc[][]
     {
@@ -89,4 +109,67 @@ public class MapEncounters : MonoBehaviour
         Map.Add(obj.GetComponent<RectTransform>().position); //zamienia end[][] w liste stworzonych na jej postawie GameObjectow
     }
 
+
+
+
+    
+
+    public void RandomizeMap()
+    {
+        int rowCounter = 0;
+        int indexTemp = 0;
+
+        // { numer wiersza (0 - 11), numer obiektu w wierszu(1-6),   typ obiektu(0, 1, 3, 20, 21),   indexy obiektów z ktorymi jest po³¹czony na wyzszym wierszu,   dodaæ wiecej wartoœci dla innych zmiennych (typ przeciwnika, poziom itp itd) } 
+        // 0 - walka, 1 - odpoczynek, 3 - boss fight, 20 - niewiadomy(walka), 21 - niewiadomy(odpoczynek)
+
+
+        enc[index] = new int[] { rowCounter, 1, 1, 0, 0, 0, 0, 0, 0 };  // punkt startowy
+        index++;
+        rowCounter++;
+
+        while (true)
+        {
+            if (rowCounter == 5) break;  // ¿eby nie wyjœæ poza mape
+
+
+            int rows = Random.Range(1, 6);  // randomowa iloœæ kafelków w wierszu
+            for (int i=1; i<= rows; i++)
+            {
+                int objectType = Random.Range(0, 2);  // randomowy typ obiektu (walka / odpoczynek)     docelowo niewiadomy(walka) / niewiadomy(odpoczynek)
+
+                enc[index] = new int[] { rowCounter, i, objectType, 0, 0, 0, 0, 0, 0 };
+                index++;
+            }
+
+            itemsInRows[rowCounter] = index-indexTemp-1;
+            indexTemp = index - 1;
+            rowCounter++;
+        }
+
+        enc[index] = new int[] { rowCounter, 1, 3, 0, 0, 0, 0, 0, 0 };  // boos fight
+
+    }
+
+
+
+
+
+
+    public void CreatePaths()
+    {
+        for (int i = 1; i <= itemsInRows[1]; i++)  // po³¹czenie startu z ka¿dym nastêpnym kafelkiem
+        {
+            enc[0][i+2] = i;
+        }
+
+
+
+
+
+        for (int i = 1; i <= itemsInRows[4]; i++)  // po³¹czenie ka¿dego kafelka z przedostatniego wiersza z bosem
+        {
+            enc[index-i][3] = index;
+        }
+
+    }
 }

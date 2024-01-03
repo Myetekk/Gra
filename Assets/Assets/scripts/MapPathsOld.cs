@@ -63,6 +63,11 @@ public class MapPathsOld : Graphic
      public float thickness = 10f;
      public List<Vector2> Map;
      public int paths = 0;
+
+
+
+
+
      protected override void OnPopulateMesh(VertexHelper vh) //rysuje dwa trójk¹ty tworz¹ce razem prostok¹t, jedn¹ ze œcie¿ek
      {
          RectTransform meshrect = mesh.GetComponent<RectTransform>();
@@ -86,6 +91,10 @@ public class MapPathsOld : Graphic
              }
          }
      }
+
+
+
+
      void DrawLine(Vector2 point, VertexHelper vh, RectTransform meshrect) //nie umia³em tego naprawiæ, naprawi³ to chat gpt, nie pytajcie sie mnie co sie tu dzieje bo nawet tego nie przeczyta³em
      {                                                                     //dzia³a tylko jeœli bg jest dopasowany do rogu canvasu, inaczej sie rozjezdza, idk moze uda sie komus jeszce to naprawic
         UIVertex vertex = UIVertex.simpleVert;                             // + grubosc lini nie skaluje sie z rozdzialczoscia ekranu, na 4k sa mega cienkie

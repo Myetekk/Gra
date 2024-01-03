@@ -11,6 +11,11 @@ public class MapPaths : Graphic
     public float thickness = 10f;
     public List<Vector2> Map;
     public int paths = 0;
+
+
+
+
+
     protected override void OnPopulateMesh(VertexHelper vh)
     {
         scb = GetComponent<MapEncounters>();
