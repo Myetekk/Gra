@@ -123,7 +123,7 @@ public class MapEncounters : MonoBehaviour
         // 0 - walka, 1 - odpoczynek, 3 - boss fight, 20 - niewiadomy(walka), 21 - niewiadomy(odpoczynek)
 
 
-        enc[index] = new int[] { rowCounter, 1, 1, 0, 0, 0, 0, 0, 0 };  // punkt startowy
+        enc[index] = new int[] { rowCounter, 1, 0, 0, 0, 0, 0, 0, 0 };  // punkt startowy
         index++;
         rowCounter++;
 

@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class LoadFight : MonoBehaviour
 {
-    [SerializeField] private int sceneId; // 0 - WelcomeScreen, 1 - Fight Encounter, 2 - Rest Encounter, 3 - Endscreen, 4 - Map, 5 - Pick a card 
+    [SerializeField] private int sceneId; // 0 - WelcomeScreen, 1 - Fight Encounter, 2 - Rest Encounter, 3 - Endscreen, 4 - Map, 5 - Pick a card, 6 - Rest
    
     public void LoadGame()
     {
