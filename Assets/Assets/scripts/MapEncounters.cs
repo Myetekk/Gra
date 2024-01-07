@@ -1,12 +1,17 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Runtime.CompilerServices;
+using System.Windows;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.Experimental.AI;
 using UnityEngine.UI;
+using static System.Net.Mime.MediaTypeNames;
 using static Unity.VisualScripting.Member;
+using static UnityEditor.Progress;
 
 public class MapEncounters : MonoBehaviour
 {
@@ -21,8 +26,9 @@ public class MapEncounters : MonoBehaviour
     public int[][] enc = new int[62][]; //max 10 wierszy, max 6 encounterów na wiersz + wiersz 0 (start) + wiersz 11 (boss)
     public float thickness = 10f;
     private int rows = 0;
-    private int index = 0;
+    private int indexOfTile = 0;
     private int[] itemsInRows = new int[6] { 1, 0, 0, 0, 0, 1 };
+    private int[,] indexesOfTiles = new int[6,5];
 
 
 
@@ -114,17 +120,19 @@ public class MapEncounters : MonoBehaviour
 
     
 
+    // generowanie kafli
     public void RandomizeMap()
     {
         int rowCounter = 0;
         int indexTemp = 0;
 
-        // { numer wiersza (0 - 11), numer obiektu w wierszu(1-6),   typ obiektu(0, 1, 3, 20, 21),   indexy obiektów z ktorymi jest po³¹czony na wyzszym wierszu,   dodaæ wiecej wartoœci dla innych zmiennych (typ przeciwnika, poziom itp itd) } 
+        // { numer wiersza (0 - 11),   numer obiektu w wierszu(1-6),   typ obiektu(0, 1, 3, 20, 21),   indexy obiektów z ktorymi jest po³¹czony na wyzszym wierszu,   dodaæ wiecej wartoœci dla innych zmiennych (typ przeciwnika, poziom itp itd) } 
         // 0 - walka, 1 - odpoczynek, 3 - boss fight, 20 - niewiadomy(walka), 21 - niewiadomy(odpoczynek)
 
 
-        enc[index] = new int[] { rowCounter, 1, 0, 0, 0, 0, 0, 0, 0 };  // punkt startowy
-        index++;
+        enc[indexOfTile] = new int[] { rowCounter, 1, 1, 0, 0, 0, 0, 0, 0 };  // punkt startowy
+        indexesOfTiles[rowCounter, 0] = indexOfTile;
+        indexOfTile++;
         rowCounter++;
 
         while (true)
@@ -132,22 +140,26 @@ public class MapEncounters : MonoBehaviour
             if (rowCounter == 5) break;  // ¿eby nie wyjœæ poza mape
 
 
-            int rows = Random.Range(1, 6);  // randomowa iloœæ kafelków w wierszu
-            for (int i=1; i<= rows; i++)
+            int rows = UnityEngine.Random.Range(2, 5);  // randomowa iloœæ kafelków w wierszu
+            for (int i = 1; i <= rows; i++)
             {
-                int objectType = Random.Range(0, 2);  // randomowy typ obiektu (walka / odpoczynek)     docelowo niewiadomy(walka) / niewiadomy(odpoczynek)
+                int objectType = UnityEngine.Random.Range(0, 2);  // randomowy typ obiektu (walka / odpoczynek)     docelowo niewiadomy(walka) / niewiadomy(odpoczynek)
 
-                enc[index] = new int[] { rowCounter, i, objectType, 0, 0, 0, 0, 0, 0 };
-                index++;
+                enc[indexOfTile] = new int[] { rowCounter, i, objectType, 0, 0, 0, 0, 0, 0 };
+                indexesOfTiles[rowCounter, i-1] = indexOfTile;
+                indexOfTile++;
             }
 
-            itemsInRows[rowCounter] = index-indexTemp-1;
-            indexTemp = index - 1;
+
+
+            itemsInRows[rowCounter] = indexOfTile - indexTemp - 1;
+            indexTemp = indexOfTile - 1;
             rowCounter++;
+            new WaitForSeconds((float)0.1);  // sleep poniewa¿ czêsto mapa generowa³a powtarzaln¹ iloœæ kafli w jednym wierszy (np. 1 3 3 5 5 1)
         }
 
-        enc[index] = new int[] { rowCounter, 1, 3, 0, 0, 0, 0, 0, 0 };  // boos fight
-
+        enc[indexOfTile] = new int[] { rowCounter, 1, 3, 0, 0, 0, 0, 0, 0 };  // boos fight
+        indexesOfTiles[rowCounter, 0] = indexOfTile;
     }
 
 
@@ -155,21 +167,93 @@ public class MapEncounters : MonoBehaviour
 
 
 
-    public void CreatePaths()
+    // tworzenie po³¹czeñ 
+    public void CreatePaths()  
     {
-        for (int i = 1; i <= itemsInRows[1]; i++)  // po³¹czenie startu z ka¿dym nastêpnym kafelkiem
+        int tempCounter = 0;
+        int[] entrancesToTile = new int[30];
+        entrancesToTile[0]++;
+
+
+        
+
+
+        // po³¹czenie kafla startowego z kaflami z nastêpnego rzêdu
+        for (int i = 1; i <= itemsInRows[1]; i++)  
         {
-            enc[0][i+2] = i;
+            enc[tempCounter][i+2] = i;
+            entrancesToTile[i]++;
+        }
+        tempCounter++;
+
+
+
+
+
+        // tworzenie lini dla wygenerowanych kafli
+        for (int i=1; i<5; i++)  
+        {
+            for (int j=0; j<5; j++)
+            {
+                if (indexesOfTiles[i, j] != 0)
+                {
+                    int numberOfConnectionsOfCurrentTile = UnityEngine.Random.Range(1, 3);
+
+                    int targetTile = UnityEngine.Random.Range(indexesOfTiles[i+1, 0], indexesOfTiles[i+1, itemsInRows[i+1]-1 ] );
+                    enc[tempCounter][3] = targetTile;
+                    entrancesToTile[targetTile]++;
+                    new WaitForSeconds((float)0.2);
+
+                    if (numberOfConnectionsOfCurrentTile != 1)
+                    {
+                        targetTile = UnityEngine.Random.Range(indexesOfTiles[i + 1, 0], indexesOfTiles[i + 1, itemsInRows[i + 1] - 1]);
+                        enc[tempCounter][4] = targetTile;
+                        entrancesToTile[targetTile]++;
+                        new WaitForSeconds((float)0.2);
+                    }
+
+                    tempCounter++;
+                }
+            }
         }
 
 
 
 
 
-        for (int i = 1; i <= itemsInRows[4]; i++)  // po³¹czenie ka¿dego kafelka z przedostatniego wiersza z bosem
+        // po³¹czenie ka¿dego kafelka z przedostatniego wiersza z bosem
+        for (int i = 1; i <= itemsInRows[4]; i++)  
         {
-            enc[index-i][3] = index;
+            enc[indexOfTile - i][3] = indexOfTile;
+            tempCounter++;
         }
+
+
+
+
+
+        // zapewnienie po³¹czeñ dla kafli nie po³¹czonych od do³u (którch nie wylosowa³o wczeœniej)
+        for (int i = 1; i < 5; i++)  
+        {
+            for (int j = 0; j < 5; j++)
+            {
+                if (entrancesToTile[indexesOfTiles[i, j]] == 0)
+                {
+                    for (int k = 3; k <= 8; k++)
+                    {
+                        if (enc[indexesOfTiles[i, j]][k] == 0)
+                        {
+                            int targetTile = UnityEngine.Random.Range(indexesOfTiles[i - 1, 0], indexesOfTiles[i - 1, 0] + itemsInRows[i - 1] - 1);
+                            enc[indexesOfTiles[i, j]][k] = targetTile;
+
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+
+
 
     }
 }
